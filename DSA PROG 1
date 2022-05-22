@@ -1,12 +1,11 @@
 class MinStack:
-    top=0
     
     def __init__(self):
         self.a=[]
-        
+        Self.top=0
 
     def push(self, val):
-        self.a[top]=val
+        a[top]=val
         top+=1
 
     def pop(self):
@@ -21,6 +20,11 @@ class MinStack:
     def getMin(self):
         min(self.a)
         
-
-
-m=MinStack()
+minStack = MinStack();
+minStack.push(-2)
+minStack.push(0) 
+minStack.push(-3)
+minStack.getMin()
+minStack.pop()
+minStack.top()
+minStack.getMin()
