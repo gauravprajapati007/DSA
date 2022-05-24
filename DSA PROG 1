@@ -1,30 +1,35 @@
 #include <iostream>
 using namespace std;
 
-int stack[], minimum [] ,n=10, top=-1;
+int stack[], minimum [] ,n=10, top=-1,min=-1;
+
 void push(val) {
-   if(top>=n-1)
-   cout<<"Stack Overflow"<<endl;
-   else {
+   While(top<n-1){
       stack[++top]=val;
-   }
+      If(stack[top-1]>val){
+         Minimum[++min]=val
+  }
 }
 void pop() {
    if(top<=-1)
-   cout<<"Stack Underflow"<<endl;
-   else {
-      cout<<"The popped element is "<< stack[top--] <<endl;
+   break;
+   else{
+      stack[top--];
    }
 }
 
-void display() {
-   if(top>=0) {
-      cout<<"Stack elements are:";
-      for(int i=top; i>=0; i--)
-      cout<<stack[i]<<" "
-      Count<<endl;
-   } else
-   cout<<"Stack is empty";
+void getMin() {
+   Cout<<minimum[min];
 }
+
+Void top() {
+   Cout<<top;
+
 int main() {
-   
+push(-2);
+push(0);
+push(-3);
+getMin();
+pop();
+top();  
+getMin();
