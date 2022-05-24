@@ -1,30 +1,30 @@
-class MinStack:
-    
-    def __init__(self):
-        self.a=[]
-        Self.top=0
+#include <iostream>
+using namespace std;
 
-    def push(self, val):
-        a[top]=val
-        top+=1
+int stack[], minimum [] ,n=10, top=-1;
+void push(val) {
+   if(top>=n-1)
+   cout<<"Stack Overflow"<<endl;
+   else {
+      stack[++top]=val;
+   }
+}
+void pop() {
+   if(top<=-1)
+   cout<<"Stack Underflow"<<endl;
+   else {
+      cout<<"The popped element is "<< stack[top--] <<endl;
+   }
+}
 
-    def pop(self):
-        x=a[top]
-        top-=1
-        return(x)
-    
-    def top(self):
-        return a[top]
-        
-
-    def getMin(self):
-        min(self.a)
-        
-minStack = MinStack();
-minStack.push(-2)
-minStack.push(0) 
-minStack.push(-3)
-minStack.getMin()
-minStack.pop()
-minStack.top()
-minStack.getMin()
+void display() {
+   if(top>=0) {
+      cout<<"Stack elements are:";
+      for(int i=top; i>=0; i--)
+      cout<<stack[i]<<" "
+      Count<<endl;
+   } else
+   cout<<"Stack is empty";
+}
+int main() {
+   
