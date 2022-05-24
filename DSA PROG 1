@@ -1,31 +1,123 @@
 #include <iostream>
+
 using namespace std;
 
- stack[], minimum [] ,n=10, top=-1,min=-1;
+int stck[10], minimum [10] ,n=10, top=-1,Min=-1;
 
-void push(val) {
-   While(top<n-1){
-      stack[++top]=val;
-      If(stack[top-1]>val){
-mum[++min]=val
+void push(int val) {
+
+   while(top<n-1){
+
+      stck[++top]=val;
+
+      if(stck[top-1]>val){
+
+         minimum[++Min]=val;
+
   }
+
+ }
+
 }
-void pop() {
+
+void pop()
+
+{
+
    if(top<=-1)
-   break;
+
+     return;
+
    else{
-      stack[top--];
+
+      top--;
+
    }
+
 }
 
 void getMin() {
-   Cout<<minimum[min];
+
+   cout<<minimum[Min];
+
 }
 
-Void top() {
-   Cout<<top;
+void tOp() {
 
-int main()
+   cout<<top;
+
+}
+
+int main() {
+
+push(-2);
+
+push(0);
+
+push(-3);
+
+getMin();
+
+pop();
+
+tOp();
+
+getMin();
+
+}
+
+       
+
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+        
+
+    
+
+    
+
+ 
+
+       
+
+    
+
+   
+
+   
+
+       
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
 
 
 
