@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int stack[], minimum [] ,n=10, top=-1,min=-1;
+ stack[], minimum [] ,n=10, top=-1,min=-1;
 
 void push(val) {
    While(top<n-1){
       stack[++top]=val;
       If(stack[top-1]>val){
-         Minimum[++min]=val
+mum[++min]=val
   }
 }
 void pop() {
@@ -25,11 +25,11 @@ void getMin() {
 Void top() {
    Cout<<top;
 
-int main() {
-push(-2);
-push(0);
-push(-3);
-getMin();
-pop();
+int main()
+
+
+
+
+
 top();  
 getMin();
