@@ -1,127 +1,38 @@
 #include <iostream>
-
 using namespace std;
 
 int stck[10], minimum [10] ,n=10, top=-1,Min=-1;
 
 void push(int val) {
-
    while(top<n-1){
-
       stck[++top]=val;
-
       if(stck[top-1]>val){
-
          minimum[++Min]=val;
-
   }
-
  }
-
 }
-
 void pop()
-
 {
-
    if(top<=-1)
-
      return;
-
    else{
-
       top--;
-
    }
-
 }
 
 void getMin() {
-
    cout<<minimum[Min];
-
 }
 
 void tOp() {
-
    cout<<top;
-
 }
-
 int main() {
-
 push(-2);
-
 push(0);
-
 push(-3);
-
 getMin();
-
 pop();
-
 tOp();
-
 getMin();
-
 }
-
-       
-
-   
-
-    
-
-    
-
-    
-
-    
-
-    
-
-        
-
-    
-
-    
-
- 
-
-       
-
-    
-
-   
-
-   
-
-       
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-top();  
-getMin();
